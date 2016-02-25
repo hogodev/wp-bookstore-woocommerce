@@ -33,6 +33,10 @@ do_action( 'woocommerce_email_order_details', $order, $sent_to_admin, $plain_tex
 
 echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
 
+do_action( 'woocommerce_email_download_link', $order, $sent_to_admin, $plain_text, $email );
+
+echo "\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n";
+
 /**
  * @hooked WC_Emails::order_meta() Shows order meta data.
  */

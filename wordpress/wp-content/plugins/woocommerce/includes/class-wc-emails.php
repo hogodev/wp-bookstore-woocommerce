@@ -111,6 +111,7 @@ class WC_Emails {
 		add_action( 'woocommerce_email_order_meta', array( $this, 'order_meta' ), 10, 3 );
 		add_action( 'woocommerce_email_customer_details', array( $this, 'customer_details' ), 10, 3 );
 		add_action( 'woocommerce_email_customer_details', array( $this, 'email_addresses' ), 20, 3 );
+		add_action( 'woocommerce_email_download_link', array( $this, 'download_link' ), 20, 4 );
 
 		// Hooks for sending emails during store events
 		add_action( 'woocommerce_low_stock_notification', array( $this, 'low_stock' ) );
@@ -376,6 +377,17 @@ class WC_Emails {
 			wc_get_template( 'emails/plain/email-addresses.php', array( 'order' => $order ) );
 		} else {
 			wc_get_template( 'emails/email-addresses.php', array( 'order' => $order ) );
+		}
+	}
+
+	/**
+	 * Get the download links.
+	 */
+	public function download_link( $order, $sent_to_admin = false, $plain_text = false, $email = '' ) {
+		if ( $plain_text ) {
+			wc_get_template( 'emails/plain/email-download-link.php', array( 'order' => $order, 'email' => $email ));
+		} else {
+			wc_get_template( 'emails/email-download-link.php', array( 'order' => $order, 'email' => $email ));
 		}
 	}
 
