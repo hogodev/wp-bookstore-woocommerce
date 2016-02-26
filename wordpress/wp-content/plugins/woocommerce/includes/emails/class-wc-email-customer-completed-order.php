@@ -62,13 +62,6 @@ class WC_Email_Customer_Completed_Order extends WC_Email {
 
 			$this->replace['order-date']   = date_i18n( wc_date_format(), strtotime( $this->object->order_date ) );
 			$this->replace['order-number'] = $this->object->get_order_number();
-			echo "<pre>";
-			print_r($this->get_recipient());
-			print_r($this->get_subject());
-			print_r($this->get_content());
-			print_r($this->get_headers());
-			print_r($this->get_attachments());
-			echo "</pre>";
 		}
 
 		if ( ! $this->is_enabled() || ! $this->get_recipient() ) {
