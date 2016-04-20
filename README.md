@@ -4,8 +4,7 @@ Free WordPress Woocommerce theme was customized and integrated with HoGoDoc API.
 Online demo http://store.hogodoc.com
 <img width="693" alt="hogo_bookstore" src="https://cloud.githubusercontent.com/assets/1794584/14672100/e1bdd586-071f-11e6-9d3d-56e287cbbea9.png">
 
-### 1. View how it work 
-<a href="https://github.com/hogodev/wp-bookstore-woocommerce/issues/1" target="_blank"> Check it now</a>
+### 1. View how it work:  <a href="https://github.com/hogodev/wp-bookstore-woocommerce/issues/1" target="_blank"> Check it now</a>
 
 ### 2. How to setup your store and add your books from HoGo site 
 #### 2.1 Deploy to your hosting
