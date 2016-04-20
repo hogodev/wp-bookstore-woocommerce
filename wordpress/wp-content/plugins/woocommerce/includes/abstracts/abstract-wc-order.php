@@ -127,6 +127,48 @@ abstract class WC_Abstract_Order {
 		}
 	}
 
+	public function download_link( $args = array() ) {
+		$items = $this->get_items();
+
+		$listSKU = [];
+		$products = [];
+
+		foreach ($items as $item) {
+			$product = $this->get_product_from_item($item);
+			$sku = $product->get_sku();
+			$listProp = [];
+			$listProp['sku'] = $sku;
+			$listProp['title'] = $item['name'];
+			$products[$sku] = $listProp;
+			$listSKU[] = $sku;
+
+		}
+
+		$skus = implode( ",", $listSKU);
+
+		$args_api = array(
+            'method' => 'POST',
+            'timeout' => 45,
+            'body' => array(
+	            'Key' => 'hogo',
+	            'DocumentIds' => $skus,
+	            'Recipients' => $this->billing_email
+            )
+        );
+        $response = wp_remote_post('http://dev.hogodoc.com/HoGo/api/v1/StoreRegisterDocument',$args_api);
+        $body = wp_remote_retrieve_body($response);
+        $links = json_decode(wp_remote_retrieve_body($response));
+
+        foreach($links->list_document as $key => $val){
+			$sku = $val->document_id;
+			$arrObj = $products[$sku];
+			$arrObj['download_link'] = $val->link_download_direct;
+			$products[$sku] = $arrObj;
+		}
+
+		return $products;
+	}
+
 	/**
 	 * Remove all line items (products, coupons, shipping, taxes) from the order.
 	 *

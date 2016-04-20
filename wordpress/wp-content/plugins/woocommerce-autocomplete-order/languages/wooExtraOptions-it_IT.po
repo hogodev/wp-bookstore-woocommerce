@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce - Autocomplete Orders\n"
+"POT-Creation-Date: 2016-02-02 22:21+0000\n"
+"PO-Revision-Date: 2016-02-02 22:22+0000\n"
+"Last-Translator: Mirko Grewing <mirko@grewing.co.uk>\n"
+"Language-Team: Mirko Grewing <mirko@grewing.co.uk>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: woocommerce-autocomplete-order.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: woocommerce-autocomplete-order.php:25
+#, fuzzy
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: woocommerce-autocomplete-order.php:26
+msgid "FAQ"
+msgstr "FAQ"
+
+#: woocommerce-autocomplete-order.php:27
+msgid "Support"
+msgstr "Supporto"
+
+#: woocommerce-autocomplete-order.php:88
+msgid "Extra Options"
+msgstr "Opzioni Aggiuntive"
+
+#: woocommerce-autocomplete-order.php:118
+msgid "Autocomplete Orders"
+msgstr "Autocompletamento Ordini"
+
+#: woocommerce-autocomplete-order.php:124
+msgid "Mode"
+msgstr "Modo"
+
+#: woocommerce-autocomplete-order.php:126
+msgid "Select the modality you want to activate."
+msgstr "Selezionare la modalità che si desidera attivare."
+
+#: woocommerce-autocomplete-order.php:221
+msgid "This plugin requires WooCommerce 2.1 or higher!"
+msgstr "Questo plugin richiede WooCommerce 2.1 o superiore!"
+
+#: woocommerce-autocomplete-order.php:233
+msgid "WARNING"
+msgstr "ATTENZIONE"
+
+#: woocommerce-autocomplete-order.php:233
+msgid ""
+"WooCommerce is installed but not activated, therefore, WooCommerce "
+"Autocomplete Orders will not work!"
+msgstr ""
+"WooCommerce è installato ma non attivato, pertanto, WooCommerce Autocomplete "
+"Order non funzionerà!"
+
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce - Autocomplete Orders"
+msgstr "WooCommerce - Autocomplete Orders"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.seriousplugins.com/woocommerce-autocomplete-orders/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Would you buy twice from a website that does not give you instanctly access "
+"to the product you purchased? Why would you want that for your customer? "
+"Take back the ownership of your ecommerce!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Serious Plugins"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.seriousplugins.com"
+msgstr ""
+
+#~ msgid ""
+#~ "Do you hate WooCommerce for obliging you to manually approve every order "
+#~ "placed for non-downloadable goods? This plugin is the answer, since "
+#~ "allows to automatically mark orders for **virtual** products as Completed "
+#~ "after a successful payment (e.g. with PayPal or Credit Card)."
+#~ msgstr ""
+#~ "Odi WooCommerce per obbligarti ad approvare manualmente ogni ordine per "
+#~ "beni non scaricabili? Questo plugin è la risposta, consentendo di "
+#~ "contrassegnare automaticamente gli ordini per prodotti virtuali come "
+#~ "Completati a seguito di pagamento riuscito (es. con PayPal o Carta di "
+#~ "Credito)."
