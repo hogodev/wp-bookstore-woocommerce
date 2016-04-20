@@ -155,7 +155,7 @@ abstract class WC_Abstract_Order {
 	            'Recipients' => $this->billing_email
             )
         );
-        $response = wp_remote_post('http://dev.hogodoc.com/HoGo/api/v1/StoreRegisterDocument',$args_api);
+        $response = wp_remote_post('http://www.hogodoc.com/HoGo/api/v1/StoreRegisterDocument',$args_api);
         $body = wp_remote_retrieve_body($response);
         $links = json_decode(wp_remote_retrieve_body($response));
 
