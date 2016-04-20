@@ -24,15 +24,19 @@ You can select any WordPress theme available you want to change the current them
 <ul>
 <li>Step 1: Login into <a href="https://www.hogodoc.com/HoGo/login" target="_blank"> HoGo console </a>, go to My Document and upload your books (PDF,DOCX,XLSX,PPTX) and encode</li>
 <li>Step 2: From My Document list, select the document detail to get document ID</li>
+<br/>
 <img width="700" alt="hogo_bookstore" src="https://cloud.githubusercontent.com/assets/1794584/14673316/7ddf8d18-0727-11e6-9575-26e306f79cf2.png">
 <li>Step 3: Copy document ID from URL, for example URL /MyDocumentDetail?documentId=XXX the document ID is XXX</li>
 <li>Step 4: Now login into your Book Store admin, and select to add new product</li>
+<br/>
 <img width="700" alt="hogo_bookstore" src="https://cloud.githubusercontent.com/assets/1794584/14673487/64b328ee-0728-11e6-9875-e10e1a6fe49a.png">
 
+<li>Step 5: Set value for your product to map with HoGo document. You just copy document ID from Step 3 above and paste into SKU field, and click SAVE</li>
+<br/>
+<img width="700" alt="hogo_bookstore" src="https://cloud.githubusercontent.com/assets/1794584/14673622/25c64282-0729-11e6-8c32-293cafbed433.png">
+
+<li>Now all done, your Books are ready to sale. And you can login into HoGo console to control your sold document anytime such as tracking who open, time open, location, etc.</li>
 </ul>
-
-
-<a href="https://github.com/hogodev/wp-bookstore-woocommerce/issues/1" target="_blank"> Check it now</a>
 
 ### 3. Other supports
 <ul>
